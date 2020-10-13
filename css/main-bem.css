@@ -1,0 +1,153 @@
+/* Huvudstilmall Checkpoint 4 !BEMVERSION!*/
+
+/* Table of Contents:
+1. Resources
+2. Body & Typography
+3. Header
+4. Content Area
+5. Footer
+6. Media Queries
+   A. 970px
+   B. 700px
+*/
+
+/* 1. RESOURCES */
+@font-face {
+    font-family: BreeSerifReg;
+    src: url("../fonts/breeserif-regular-webfont.woff") format("woff"), url("../fonts/breeserif-regular-webfont.woff2") format("woff2");
+}
+
+/* 2. BODY & TYPOGRAPHY */
+body {
+    background: #eee;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+p {
+    font: 14px helvetica, arial, sans-serif;
+    color: #222;
+    line-height: 1.5em;
+}
+
+h1,
+h2 {
+    color: #c09;
+}
+
+h1 {
+    font: normal 30px BreeSerifReg, arial, sans-serif;
+}
+
+h2 {
+    font: 400 normal 24px "Trade Winds", arial, sans-serif;
+    margin: .3em .2em 0;
+    letter-spacing: 1.5px;
+}
+
+/* 3. HEADER */
+.header {
+    height: 140px;
+}
+
+.header__banner {
+    height: 100%;
+    background-image: url("../images/luca-lago-NOD8zCeHGz0-unsplash.jpg");
+    position: relative;
+}
+
+.header__bannerText h1 {
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: .25em;
+    box-shadow: 3px 2px 7px rgba(0, 0, 0, .4)
+}
+
+/* 4. CONTENT AREA */
+.section {
+    padding: 12px;
+    padding-top: 1em;
+    float: left;
+}
+
+.section__section {
+    width: 600px;
+}
+
+.section__sidebar {
+    width: 302px;
+    margin-left: 10px;
+}
+
+/* 5. FOOTER */
+.footer {
+    clear: both;
+    height: 200px;
+}
+
+.footer__paragraph {
+    text-align: center;
+    padding-top: 80px;
+    font-size: .7em;
+    font-weight: bold;
+}
+
+.footer__paragraph:last-of-type {
+    padding-top: 0;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+a:hover {
+    color: firebrick;
+}
+
+/* 6. MEDIA QUERIES
+   A. 980px screen*/
+@media only screen and (max-width: 980px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .section {
+        padding: 1.25%;
+    }
+    
+    .section__section {
+        width: 62%;    
+    }
+
+    .section__sidebar {
+        width: 32%;
+        margin-left: 1%;
+    }
+}
+
+/* B. 700px screen*/
+@media only screen and (max-width: 700px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .section__section {
+        width: 95%;
+    }
+
+    .section__sidebar {
+        width: 90%;
+        margin-left: 3%;
+    }
+}
