@@ -1,30 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" class="no-js">
 
 <head>
     <title>Nellie Johnsson Checkpoint 4</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="author" content="Nellie Johnsson" />
     <!--CSS Reset-->
     <link href="css/meyer-reset.css" rel="stylesheet" type="text/css" />
     <!--Grundstilmall-->
     <link href="css/main-bem.css" rel="stylesheet" type="text/css" />
     <!--Google Font: Trade Winds-->
-    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;800&display=swap" rel="stylesheet"/>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header>
             <div class="header__banner">
                 <div class="header__bannerText">
                     <h1>Checkpoint 4 är här</h1>
                 </div>
             </div>
-        </div>
-
-        <div class="section section__section">
+        </header>
+        
+        <section>
+        <div class="section__section">
             <h2>Artisanal filler text for your project.</h2>
             <p>Lorem ipsum dolor amet raclette single-origin coffee edison bulb salvia, pork belly hexagon coloring book messenger bag prism distillery pug VHS. Retro vice distillery helvetica tacos iceland craft beer thundercats four loko taiyaki. Fashion axe venmo synth vinyl, shabby chic street art taxidermy hella farm-to-table polaroid kickstarter pug brunch. Farm-to-table enamel pin dreamcatcher unicorn, williamsburg cred keffiyeh butcher gentrify irony tousled pug brunch. Woke tote bag gastropub sartorial vape squid meh hella austin unicorn schlitz. Hoodie ramps man bun literally waistcoat, raclette cronut.</p>
             <p>Cornhole organic humblebrag, whatever glossier pabst freegan beard chia typewriter meh literally gochujang dreamcatcher. Flannel vegan ethical man bun four dollar toast kickstarter enamel pin subway tile neutra taiyaki cliche. Banjo pug occupy listicle biodiesel bespoke plaid street art echo park unicorn locavore brooklyn fashion axe tattooed vexillologist. Farm-to-table tattooed swag pinterest photo booth everyday carry, irony cred chambray sriracha subway tile bespoke trust fund tacos flannel. Swag four loko food truck, semiotics waistcoat street art brooklyn meditation cliche.</p>
@@ -32,16 +33,27 @@
             <p>Raw denim godard tilde scenester. Raclette sriracha asymmetrical, adaptogen snackwave salvia franzen. Forage wayfarers hella, whatever taxidermy migas wolf. Neutra cronut vexillologist marfa gochujang, small batch keytar cray truffaut skateboard kombucha keffiyeh snackwave chillwave XOXO. Synth echo park kale chips readymade tacos keytar +1 cornhole lomo. Wayfarers palo santo pinterest, sriracha put a bird on it vinyl yr taiyaki chartreuse swag slow-carb activated charcoal. Cliche pop-up narwhal try-hard pug migas etsy, shoreditch coloring book XOXO lo-fi.</p>
             <p>Truffaut street art health goth, air plant selfies seitan vexillologist offal squid 90's taxidermy drinking vinegar you probably haven't heard of them taiyaki la croix. Pork belly hell of butcher snackwave godard, hella chia sustainable crucifix pabst before they sold out single-origin coffee put a bird on it cold-pressed wolf. Four loko green juice skateboard ramps bicycle rights gentrify migas adaptogen, yr paleo. Paleo godard pour-over hashtag fingerstache normcore irony pok pok banh mi taiyaki pinterest la croix. Chicharrones leggings waistcoat ramps, bushwick raw denim beard kogi marfa tote bag bitters. La croix tacos freegan vinyl authentic, hot chicken yuccie sriracha health goth yr chambray microdosing whatever ethical.</p>
         </div>
-        <div class="section section__sidebar">
+        <div class="section__sidebar">
+            
+            <picture>
+                <source media="(min-width:700px)" srcset="images/graffa-small_300.jpg 300w, images/graffa-small_600.jpg 600w, images/graffa-small_900.jpg 900w"/>
+                <source media="(max-width:700px)" srcset="images/graffa-large_600.jpg 600w, images/graffa-large_1200.jpg 1200w, images/graffa-large_1800.jpg 1800w"/>    
+                <img src="images/graffa-large_600.jpg" alt="graffiti wall"/> 
+            </picture>
             <h2>Oh. You need a little dummy text for your mockup? How quaint.</h2>
             <p>Unicorn jean shorts hot chicken, tote bag copper mug sriracha meh. Kombucha kickstarter kitsch lomo four dollar toast. Fashion axe blue bottle try-hard, mustache sartorial pitchfork bushwick craft beer activated charcoal godard gentrify ugh listicle slow-carb. Literally mumblecore brooklyn twee +1 before they sold out. Bespoke raclette pitchfork enamel pin, poke skateboard pop-up kinfolk la croix literally letterpress church-key neutra asymmetrical. Vice bespoke pork belly, bicycle rights ramps plaid trust fund.</p>
             <p>Gluten-free YOLO jianbing, chillwave sriracha enamel pin wayfarers celiac. Copper mug sriracha celiac, unicorn kogi occupy edison bulb pok pok VHS tote bag messenger bag neutra palo santo. Ugh try-hard artisan, locavore brunch gochujang copper mug humblebrag asymmetrical truffaut shoreditch air plant tumeric flannel. Deep v 90's polaroid woke pabst skateboard chartreuse air plant hoodie distillery art party. Disrupt semiotics pork belly photo booth fanny pack 90's.</p>
         </div>
+            </section>
 
         <div class="footer">
             <p class="footer__paragraph">Grundnivå i HTML och CSS &#x007C; <a href="https://www.hv.se/" title="Gå till hemsidan">Högskolan Väst</a></p>
             <p class="footer__paragraph">Headerbild hämtad från Unsplash. Fotograf Luca Lago.</p>
         </div>
     </div>
+    <script>
+    document.documentElement.classList.remove("no-js");
+        </script>
+    <script src="modernizr-custom.js"></script>
 
 </body></html>

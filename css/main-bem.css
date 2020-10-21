@@ -18,6 +18,10 @@
 }
 
 /* 2. BODY & TYPOGRAPHY */
+html {
+    font-size: 1rem;
+}
+
 body {
     background: #eee;
 }
@@ -30,7 +34,7 @@ body {
 }
 
 p {
-    font: 14px helvetica, arial, sans-serif;
+    font: 400 .9rem "Sora", arial, sans-serif;
     color: #222;
     line-height: 1.5em;
 }
@@ -45,19 +49,30 @@ h1 {
 }
 
 h2 {
-    font: 400 normal 24px "Trade Winds", arial, sans-serif;
-    margin: .3em .2em 0;
+    font: 800 normal 21px "Sora", arial, sans-serif;
+    margin: 1em .2em .75em;
     letter-spacing: 1.5px;
 }
 
 /* 3. HEADER */
-.header {
+header {
     height: 140px;
+}
+
+.no-js .header__banner {
+  background-image: url("../images/luca-lago-NOD8zCeHGz0-unsplash.jpg");
+}
+
+.no-webp .header__banner {
+  background-image: url("../images/luca-lago-NOD8zCeHGz0-unsplash.jpg");
+}
+
+.webp .header__banner{
+  background-image: url("../images/luca-lago-NOD8zCeHGz0-unsplash.webp");
 }
 
 .header__banner {
     height: 100%;
-    background-image: url("../images/luca-lago-NOD8zCeHGz0-unsplash.jpg");
     position: relative;
 }
 
@@ -73,10 +88,14 @@ h2 {
 }
 
 /* 4. CONTENT AREA */
-.section {
-    padding: 12px;
-    padding-top: 1em;
+
+section, .section__section, .section__sidebar {
     float: left;
+}
+
+section {
+    padding: .85rem;
+    padding-top: 1em;  
 }
 
 .section__section {
@@ -84,8 +103,14 @@ h2 {
 }
 
 .section__sidebar {
-    width: 302px;
-    margin-left: 10px;
+    width: 308px;
+    margin-left: 1.5rem;
+}
+
+img {
+    width: 95%;
+    display: block;
+    padding: 1.85em 0 .5em;
 }
 
 /* 5. FOOTER */
@@ -122,17 +147,17 @@ a:hover {
         width: 100%;
     }
 
-    .section {
-        padding: 1.25%;
+    section {
+        padding: 1.5%;
     }
     
     .section__section {
-        width: 62%;    
+        width: 64%;    
     }
 
     .section__sidebar {
-        width: 32%;
-        margin-left: 1%;
+        width: 34%;
+        margin-left: 2%;
     }
 }
 
@@ -144,10 +169,15 @@ a:hover {
 
     .section__section {
         width: 95%;
+        margin-left: 2.5%;
+    }
+    
+    img {
+        padding-top: 2.7em;
     }
 
     .section__sidebar {
         width: 90%;
-        margin-left: 3%;
+        margin-left: 5%;
     }
 }
